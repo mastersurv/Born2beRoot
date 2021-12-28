@@ -78,3 +78,9 @@ nano /etc/login.defs
 ## 6. Скрипт
 
 cd /usr/local/bin/
+
+crontab -e - Открыть крон
+
+\* * * * * /usr/local/bin/monitoring.sh - запуск каждую минуту
+
+\* * * * * ( sleep 30 ; /usr/local/bin/monitoring.sh ) - установить запуск каждые 30 секунд
