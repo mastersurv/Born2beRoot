@@ -9,6 +9,8 @@ sudo ufw status
 
 systemctl status ssh
 
+nano /etc/ssh/sshd_config - конфиг ssh
+
 Устанавливаем sudo:
 
 apt update
